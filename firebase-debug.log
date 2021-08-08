@@ -1,0 +1,131 @@
+[debug] [2021-07-28T08:59:17.781Z] ----------------------------------------------------------------------
+[debug] [2021-07-28T08:59:17.785Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-07-28T08:59:17.787Z] CLI Version:   9.16.0
+[debug] [2021-07-28T08:59:17.787Z] Platform:      win32
+[debug] [2021-07-28T08:59:17.787Z] Node Version:  v14.16.0
+[debug] [2021-07-28T08:59:17.789Z] Time:          Wed Jul 28 2021 14:29:17 GMT+0530 (India Standard Time)
+[debug] [2021-07-28T08:59:17.790Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-28T08:59:17.930Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-28T08:59:17.930Z] > authorizing via signed-in user (sandeeprwt58@gmail.com)
+[debug] [2021-07-28T08:59:17.931Z] [iam] checking project disneyplus-clone-a33d5 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-07-28T08:59:17.935Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-28T08:59:17.936Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-28T08:59:18.366Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 28 Jul 2021 08:58:25 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-28T08:59:18.468Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-07-28T08:59:20.411Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 28 Jul 2021 08:58:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1382","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-28T08:59:20.413Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project disneyplus-clone-a33d5:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2021-07-28T08:59:20.415Z] > refreshing access token with scopes: []
+[debug] [2021-07-28T08:59:20.415Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-28T08:59:20.711Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 28 Jul 2021 08:58:27 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-28T08:59:20.878Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 [none]
+[debug] [2021-07-28T08:59:21.708Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 403
+[debug] [2021-07-28T08:59:21.708Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-07-28T08:59:21.709Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-07-28T08:59:22.005Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.getDefaultHostingSite (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:65:9)
+    at async C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:169:17
+[error] 
+[error] Error: Failed to get Firebase project disneyplus-clone-a33d5. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-07-28T08:59:36.349Z] ----------------------------------------------------------------------
+[debug] [2021-07-28T08:59:36.355Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-07-28T08:59:36.357Z] CLI Version:   9.16.0
+[debug] [2021-07-28T08:59:36.357Z] Platform:      win32
+[debug] [2021-07-28T08:59:36.358Z] Node Version:  v14.16.0
+[debug] [2021-07-28T08:59:36.360Z] Time:          Wed Jul 28 2021 14:29:36 GMT+0530 (India Standard Time)
+[debug] [2021-07-28T08:59:36.360Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-28T08:59:36.518Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-28T08:59:36.518Z] > authorizing via signed-in user (sandeeprwt58@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\dell\Desktop\cp-disney-plus-clone-master
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using disneyplus-clone-a33d5. 
+[debug] [2021-07-28T08:59:51.828Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 [none]
+[debug] [2021-07-28T08:59:52.748Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 403
+[debug] [2021-07-28T08:59:52.749Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-07-28T08:59:52.750Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-07-28T08:59:53.054Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project disneyplus-clone-a33d5. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-07-28T12:15:29.235Z] ----------------------------------------------------------------------
+[debug] [2021-07-28T12:15:29.245Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-07-28T12:15:29.246Z] CLI Version:   9.16.0
+[debug] [2021-07-28T12:15:29.247Z] Platform:      win32
+[debug] [2021-07-28T12:15:29.247Z] Node Version:  v14.16.0
+[debug] [2021-07-28T12:15:29.251Z] Time:          Wed Jul 28 2021 17:45:29 GMT+0530 (India Standard Time)
+[debug] [2021-07-28T12:15:29.252Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-28T12:15:29.566Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-28T12:15:29.567Z] > authorizing via signed-in user (sandeeprwt58@gmail.com)
+[debug] [2021-07-28T12:15:29.567Z] [iam] checking project disneyplus-clone-a33d5 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-07-28T12:15:29.577Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-28T12:15:29.578Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-28T12:15:30.385Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 28 Jul 2021 12:14:36 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-28T12:15:35.643Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-07-28T12:15:37.293Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 28 Jul 2021 12:14:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=321","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-28T12:15:37.295Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project disneyplus-clone-a33d5:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2021-07-28T12:15:37.300Z] > refreshing access token with scopes: []
+[debug] [2021-07-28T12:15:37.301Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-28T12:15:38.065Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 28 Jul 2021 12:14:44 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-28T12:15:38.366Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 [none]
+[debug] [2021-07-28T12:15:39.615Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 403
+[debug] [2021-07-28T12:15:39.616Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-07-28T12:15:39.617Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-07-28T12:15:40.285Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.getDefaultHostingSite (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:65:9)
+    at async C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:169:17
+[error] 
+[error] Error: Failed to get Firebase project disneyplus-clone-a33d5. Please make sure the project exists and your account has permission to access it.
